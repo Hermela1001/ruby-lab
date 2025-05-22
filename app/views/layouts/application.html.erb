@@ -1,0 +1,16 @@
+<body>
+  <div class="header-card">
+    <h2><%= @greeting %></h2>
+    <% if @last_visited_ago %>
+      <p>Last visited: <%= @last_visited_ago %> ago</p>
+    <% else %>
+      <p>Welcome! This is your first visit.</p>
+    <% end %>
+    <p>Total visits: <%= @total_visits %></p>
+    <p>This page visits: <%= @page_visits %></p>
+  </div>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+</body>
